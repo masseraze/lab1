@@ -1,2 +1,1 @@
-# lab1
-g++ lab1.cpp 
+how to compile program
