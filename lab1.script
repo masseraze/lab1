@@ -1,0 +1,81 @@
+Script started on 2017年03月17日 (週五) 21時49分20秒
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m whoami;pwd
+pd2vm
+/home/pd2vm/Desktop/test/lab1
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git v[Kconfig-[K-l
+git: 'config-l' is not a git command. See 'git --help'.
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git config -1
+error: unknown switch `1'
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the color configured: [default]
+    --get-colorbool <slot>
+                          find the color setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git config-[K -l
+user.email=sujason72@gmail.com
+user.name=jason876807
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git clone https://github.com/masseraz e/lab1.git
+fatal: destination path 'lab1' already exists and is not an empty directory.
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m gd[Kit add .
+fatal: Not a git repository (or any of the parent directories): .git
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git commit -m
+fatal: Not a git repository (or any of the parent directories): .git
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git init
+Initialized empty Git repository in /home/pd2vm/Desktop/test/lab1/.git/
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git add .
+[01;32mpd2vm@pd2vm-VirtualBox[01;34m ~/Desktop/test/lab1 $[00m git commit -m
+error: switch `m' requires a value
+usage: git commit [options] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>
